@@ -12,6 +12,10 @@ export const HeroScreen = () => {
     const handleReturn = () => {
       navigate(-1) //-1 to come back
     }
+    
+    if (!hero) {
+      return <Navigate to='/'/>
+    };
 
     const {
       id,
@@ -22,10 +26,7 @@ export const HeroScreen = () => {
       characters
     } = hero;
 
-    if (!hero) {
-      return <Navigate to='/'/>
-    };
-
+    
     const imgPath = `/assets/${id}.jpg`;
 
     return (

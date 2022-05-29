@@ -1,7 +1,6 @@
-import React, { useContext, useReducer } from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../auth/authContext';
-import { authReducer } from '../../auth/authReducer';
 import { types } from '../../types/types';
 
 export const LoginScreen = () => {
